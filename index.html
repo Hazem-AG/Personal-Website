@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazem Emara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./logo.png">
+
+
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+           <div class="nav">
+                <a href="#home" class="brand">
+                    <span class="logo">
+                      <img src="./logo.png" alt="Logo">
+                    </span>
+                    <div class="brand-name">HazemEmara</div>
+                </a>
+                
+                <nav>
+                    <ul class="navlinks">
+                        <li><a href="#home" class="nav-active">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact" class="cta">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+           </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background-shapes">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Hello, I'm <span>Hazem Emara</span></h1>
+                <h2> Designer & Full-Stack Developer</h2>
+                <p>I transform ideas into reality with elegant design and development using the latest technologies and AI-powered tools.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn">
+                        <i class="fas fa-eye"></i>
+                        View My Work
+                    </a>
+                    <a href="#resume" class="btn btn-outline">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image slide-in-right">
+                <img src="./2.svg"   alt="Your Name" >
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Portfolio items -->
+                <div class="portfolio-item fade-in" 
+                     data-category="graphic"
+                     data-description="A comprehensive visual identity for a startup, including logo, color palette, and typography to establish a strong brand presence."
+                     data-tech="Adobe Illustrator, Adobe Photoshop, Figma"
+                     data-link="#">
+                    <img src="https://placehold.co/600x400/63a1f1/FFFFFF?text=Brand+Identity" alt="Project 1" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div>
+                            <h3 class="portfolio-title">Visual Identity Design</h3>
+                            <p class="portfolio-category">Graphic Design</p>
+                        </div>
+                        <div class="portfolio-details-hover">
+                            <p class="portfolio-short-desc">A complete visual identity system for a modern tech startup.</p>
+                            <div class="portfolio-tech">
+                                <span>Illustrator</span>
+                                <span>Photoshop</span>
+                            </div>
+                            <button class="btn-view-project">View Project <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" 
+                     data-category="uiux"
+                     data-description="Designing an intuitive and user-friendly interface for a mobile banking application, focusing on seamless user experience and accessibility."
+                     data-tech="Figma, Sketch, Adobe XD"
+                     data-link="#">
+                    <img src="https://placehold.co/600x400/63a1f1/FFFFFF?text=Mobile+App" alt="Project 2" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div>
+                            <h3 class="portfolio-title">Mobile App Interface</h3>
+                            <p class="portfolio-category">UI/UX Design</p>
+                        </div>
+                        <div class="portfolio-details-hover">
+                            <p class="portfolio-short-desc">A sleek and modern UI/UX design for a new fintech application.</p>
+                            <div class="portfolio-tech">
+                                <span>Figma</span>
+                                <span>Adobe XD</span>
+                            </div>
+                            <button class="btn-view-project">View Project <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" 
+                     data-category="web"
+                     data-description="Developed a fully responsive and high-performance e-commerce website with a custom CMS and secure payment gateway integration."
+                     data-tech="React, Node.js, Express, MongoDB"
+                     data-link="#">
+                    <img src="https://placehold.co/600x400/63a1f1/FFFFFF?text=E-commerce" alt="Project 3" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div>
+                           <h3 class="portfolio-title">E-commerce Website</h3>
+                            <p class="portfolio-category">Web Development</p>
+                        </div>
+                         <div class="portfolio-details-hover">
+                            <p class="portfolio-short-desc">A feature-rich e-commerce platform built with the MERN stack.</p>
+                            <div class="portfolio-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <button class="btn-view-project">View Project <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" 
+                     data-category="graphic"
+                     data-description="Designed a modern and memorable logo for a corporate client, reflecting their brand values and mission."
+                     data-tech="Adobe Illustrator, Procreate"
+                     data-link="#">
+                    <img src="https://placehold.co/600x400/63a1f1/FFFFFF?text=Logo+Design" alt="Project 4" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div>
+                            <h3 class="portfolio-title">Corporate Logo</h3>
+                            <p class="portfolio-category">Graphic Design</p>
+                        </div>
+                        <div class="portfolio-details-hover">
+                           <p class="portfolio-short-desc">A minimalist and impactful logo for a leading financial services firm.</p>
+                            <div class="portfolio-tech">
+                                <span>Illustrator</span>
+                            </div>
+                            <button class="btn-view-project">View Project <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in"
+                     data-category="uiux"
+                     data-description="Designed a data-rich and user-friendly admin dashboard for a SaaS platform, featuring complex data visualizations and intuitive controls."
+                     data-tech="Figma, D3.js"
+                     data-link="#">
+                    <img src="https://placehold.co/600x400/63a1f1/FFFFFF?text=Dashboard" alt="Project 5" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div>
+                            <h3 class="portfolio-title">Admin Dashboard</h3>
+                            <p class="portfolio-category">UI/UX Design</p>
+                        </div>
+                        <div class="portfolio-details-hover">
+                           <p class="portfolio-short-desc">An analytics dashboard design with a focus on data clarity and usability.</p>
+                           <div class="portfolio-tech">
+                                <span>Figma</span>
+                                <span>D3.js</span>
+                            </div>
+                            <button class="btn-view-project">View Project <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in"
+                     data-category="web"
+                     data-description="Built a personal portfolio website from scratch to showcase projects and skills, with a focus on clean design and smooth animations."
+                     data-tech="HTML5, CSS3, JavaScript"
+                     data-link="#">
+                    <img src="https://placehold.co/600x400/63a1f1/FFFFFF?text=Portfolio" alt="Project 6" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div>
+                            <h3 class="portfolio-title">Personal Portfolio</h3>
+                            <p class="portfolio-category">Web Development</p>
+                        </div>
+                        <div class="portfolio-details-hover">
+                           <p class="portfolio-short-desc">A creative portfolio website built with vanilla JS and modern CSS.</p>
+                           <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <button class="btn-view-project">View Project <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-more">
+                <a href="#" class="btn" id="loadMoreBtn">More Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image slide-in-left">
+                    <img src="./1.svg" alt="Your Name">
+                </div>
+                <div class="about-text fade-in">
+                    <p>I'm a passionate Web Developer and creative designer in my final year of university, skilled in both frontend and backend development. I have hands-on experience with Angular and the ability to quickly adapt to any new framework or technology.</p>
+<p>Beyond development, I create social media ads, logos, and promotional videos, and design simple 3D models using Blender. I'm also proficient in Microsoft tools, especially Excel for data analysis, and I use Notion and Monday.com to stay organized and efficient.</p>
+<p>I have strong experience leveraging AI tools across various domains — from coding and design to workflow optimization — ensuring every project combines creativity, functionality, and smart execution.</p>
+
+                    
+                <!-- ======================= -->
+                <!-- Development Skills -->
+                <!-- ======================= -->
+                <h3 class="skills-title">Development Skills</h3>
+                <div class="skills">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Frontend (HTML, CSS, JavaScript)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Backend (PHP, MySQL)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>UI/UX Design</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="30"></div>
+                        </div>
+                    </div>
+                </div>
+
+    <!-- باقي المهارات -->
+         
+    <div class="skill-item hidden-skill">
+            <div class="skill-header">
+                <span>Angular</span>
+                <span>60%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="60"></div>
+            </div>
+        </div>
+
+            <div class="skill-item hidden-skill">
+            <div class="skill-header">
+                <span>Node.js</span>
+                <span>45%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="45"></div>
+            </div>
+        </div>
+
+    <div class="skill-item hidden-skill">
+        <h3 class="skills-title">Creative & Productivity Skills</h3>
+            <div class="skill-header">
+                <span>Graphic Design</span>
+                <span>85%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+            </div>
+        </div>
+
+        <div class="skill-item hidden-skill">
+            <div class="skill-header">
+                <span>Motion Graphics</span>
+                <span>40%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="40"></div>
+            </div>
+        </div>
+
+        <div class="skill-item hidden-skill">
+            <div class="skill-header">
+                <span>3D Modeling (Blender)</span>
+                <span>30%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="30"></div>
+            </div>
+        </div>
+
+        <div class="skill-item hidden-skill">
+            <div class="skill-header">
+                <span>Microsoft Excel & Data Analysis</span>
+                <span>88%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="88"></div>
+            </div>
+        </div>
+
+        <div class="skill-item hidden-skill">
+            <div class="skill-header">
+                <span>Notion & Monday.com</span>
+                <span>82%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="82"></div>
+            </div>
+        </div>
+
+        <div class="skill-item hidden-skill">
+            <div class="skill-header">
+                <span>AI Tools Utilization</span>
+                <span>95%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-width="95"></div>
+            </div>
+        </div>
+            <!-- زر السهم -->
+    <button id="show-more-btn" class="show-more">
+        <i class="fas fa-chevron-down"></i>
+    </button>
+    </div>
+
+
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+   <section id="services" class="services">
+    <div class="container">
+        <h2>My Services</h2>
+        <div class="services-grid">
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Building responsive and high-performance websites with clean code and seamless user experiences across all devices.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Frontend & Backend Development</h3>
+                <p>Developing complete web solutions — from elegant frontend interfaces to efficient and secure backend systems.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Graphic & UI/UX Design</h3>
+                <p>Designing user-friendly interfaces, social media visuals, and modern brand identities that blend creativity with clarity.</p>
+            </div>
+
+            
+
+            <!-- باقي الخدمات المخفية -->
+            <div class="service-card fade-in hidden-service">
+                <div class="service-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Video Editing & Motion Graphics</h3>
+                <p>Creating promotional and animated videos that attract attention and deliver your message with impact.</p>
+            </div>
+            <div class="service-card fade-in hidden-service">
+                <div class="service-icon">
+                    <i class="fas fa-cubes"></i>
+                </div>
+                <h3>3D Design</h3>
+                <p>Designing simple yet creative 3D models using Blender to visualize products and ideas effectively.</p>
+            </div>
+
+            <div class="service-card fade-in hidden-service">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Tools & Automation</h3>
+                <p>Leveraging AI tools to enhance creativity, speed up workflow, and automate repetitive tasks across projects.</p>
+            </div>
+
+            <div class="service-card fade-in hidden-service">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Data Analysis & Productivity</h3>
+                <p>Using Excel, Notion, and Monday.com to organize data, analyze performance, and optimize productivity efficiently.</p>
+            </div>
+
+        </div>
+
+        <!-- السهم -->
+        <button id="show-more-services" class="show-more">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+</section>
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+    <div class="container">
+        <h2>My Resume</h2>
+        <div class="resume-content">
+            
+            <!-- Education Column -->
+            <div class="resume-column fade-in">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <p class="resume-date">2021 - Present</p>
+                    <h4 class="resume-title">Bachelor of Science in Computer Science</h4>
+                    <p>Faculty of Science, Benha University</p>
+                    <p>Final-year student specializing in Computer Science. Focused on web development, data analysis, and system design.</p>
+                </div>
+                <div class="resume-item">
+                    <p class="resume-date">2018 - Present</p>
+                    <h4 class="resume-title">Online Courses</h4>
+                    <p>Coursera & YouTube</p>
+                    <p>Completed various courses in full-stack web development, data analysis, and graphic design.</p>
+                </div>
+            </div>
+            
+            <!-- Experience Column -->
+            <div class="resume-column fade-in">
+                <h3>Experience</h3>
+                
+                <div class="resume-item">
+                    <p class="resume-date">2024 - Present</p>
+                    <h4 class="resume-title">Administrative & IT Officer</h4>
+                    <p>Charity Bensaed</p>
+                    <p>Responsible for developing and managing the institution’s website and internal systems, designing all visual materials, and analyzing data related to charitable cases.</p>
+                </div>
+
+                <div class="resume-item">
+                    <p class="resume-date">2022 - 2023</p>
+                    <h4 class="resume-title">Data Entry / Call Center</h4>
+                    <p>Dowar El Khawaga Restaurant</p>
+                    <p>Handled customer calls and data entry of daily orders with attention to accuracy and detail.</p>
+                </div>
+
+                <div class="resume-item">
+                    <p class="resume-date">2020 - Present</p>
+                    <h4 class="resume-title">Freelancer</h4>
+                    <p>Independent</p>
+                    <p>Worked on diverse projects in web development, graphic design, video editing, and data analysis using tools such as HTML, CSS, JavaScript, PHP, Excel, and Photoshop.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-download fade-in">
+    <a href="./CV.pdf" class="btn" download="Hazem_Resume.pdf">
+        <i class="fas fa-download"></i>
+        Download Full Resume (PDF)
+    </a>
+</div>
+
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Egypt, Qalyubia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hazem.abdelgawad00@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+20 101 847 9392</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+    <a href="https://www.facebook.com/hazem.abd.elgawad.608888" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/hazem.abdelgawad.9/" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/201018479392" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://github.com/Hazem-AG" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/hazem-emara-25b20431a/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo-and-links">
+        <img src="./logo.png" alt="Logo" class="footer-logo">
+        <div class="footer-social-links">
+          <a href="https://www.facebook.com/hazem.abd.elgawad.608888" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/hazem.abdelgawad.9/" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/201018479392" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://github.com/Hazem-AG" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/hazem-emara-25b20431a/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      <div class="mt-12 pt-8 border-t border-white/20 text-center space-y-1">
+      <p class="text-ui-light-shade-color" style="color:var(--ui-light-shade-color)">
+        Created by Hazem Emara &copy;
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img src="" alt="Portfolio Project Image" class="modal-image">
+                <h3 class="modal-title"></h3>
+                <p class="modal-category"></p>
+                <p class="modal-description"></p>
+                <div class="modal-details">
+                    <h4>Technologies Used</h4>
+                    <div class="modal-tech">
+                        <!-- Tech tags will be inserted here by JS -->
+                    </div>
+                    <a href="#" class="btn modal-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./Script.js"></script>
+<script>
+    document.getElementById('show-more-btn').addEventListener('click', function() {
+        const hiddenSkills = document.querySelectorAll('.hidden-skill');
+        hiddenSkills.forEach(skill => {
+            skill.classList.toggle('show');
+        });
+        this.classList.toggle('rotate');
+    });
+</script>
+<script>
+    document.getElementById('show-more-services').addEventListener('click', function() {
+        const hiddenServices = document.querySelectorAll('.hidden-service');
+        hiddenServices.forEach(service => {
+            service.classList.toggle('show');
+        });
+        this.classList.toggle('rotate');
+    });
+</script>
+
+</body>
+</html>
+
