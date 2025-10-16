@@ -1319,15 +1319,14 @@
 
             nav ul.navlinks {
                 position: fixed;
-                top: 0;
+                top: 110%;
                 right: -150%;
                 width: 100%;
-                max-width: 100%;
-                height: 100vh;
+                max-width: 150%;
+                height: 90vh;
                             border-radius: 16px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.932));
+            background:  rgb(0, 0, 0);
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            backdrop-filter: blur(1px) ;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -1339,9 +1338,9 @@
             }
             
             nav ul.navlinks.active {
-                right: 0%;
+                right: -30%;
             }
-            
+            س
             nav ul.navlinks li {
                 margin: 0;
                 transform: translateX(20px);
